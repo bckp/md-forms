@@ -3,11 +3,10 @@
  *  (c) Radovan Kepak
  *
  *  @author Radovan Kepák <kepak@atlascon.cz>
- *  @depends nette.ajax.js
  *------------------------------------------------------------------------------------------*/
 
 if (!$.nette)
-	throw 'nette.skeleton.js requires nette.ajax.js for proper work';
+	throw 'mdforms.js require nette.ajax.js for proper work';
 
 $.nette.ext('custom.input', {
 	init: function () {
