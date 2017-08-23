@@ -1,4 +1,4 @@
-div.material{
+form div.material{
 	@colorDefault: #B0BEC5;
 	@colorHover: #90A4AE;
 	@colorFocus: #436E96;
@@ -8,6 +8,22 @@ div.material{
 
 	&.small{
 		margin: 4px 0 4px;
+	}
+
+	&.checkbox{
+		margin: 2px 0;
+
+		label{
+			position: relative;
+			pointer-events: all;
+			color: #555;
+			top: auto;
+			left: auto;
+		}
+	}
+
+	&:not(.checkbox) + &.checkbox{
+		margin-top: -22px;
 	}
 
 	select.material,
